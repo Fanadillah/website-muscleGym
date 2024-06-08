@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.nav-logo img{
+    top: -1%;
+     width: 10%;
+    padding-top: -0;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    background-color: rgb(215, 65, 65) solid transparent;
+    align-content: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-link{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    color: aliceblue;
+    padding-bottom: 0.75rem;
+    position: relative;
+
+}
+
+.link a::after{
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #9b4e05;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 80%;
+}
+
+.btn{
+    padding: 0.5rem;
+    border-radius: 50px;
+    color: aliceblue;
+    background-color: #9b4e05;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn a{
+    color: aliceblue;
+}
+
+.btn:hover{
+    background-color: #181818;
+    border-color: #ffffff;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 7rem;
+}
+
+.image-logo {
+    position: absolute;
+    max-width: 600px;
+    right: 6%;
+    top: -30%;
+    z-index: -100;
+}
+
+.content{
+    text-align: left;
+    color: #ffffff;
+}
+
+.content h1{
+    font-size: 4rem;
+}
+
+.content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.content p{
+    margin-top: 0.6rem;
+} 
+
+.content h4{
+    margin-top: 6rem;
+}
+
+.content h4 a{
+    background-color: #9b4e05;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    color: #ffffff;
+}
+
+.content h4 a:hover{
+    background-color: #000000;
+    border-color: #ffffff;
+}
+.workout{
+    max-width: 1200px;
+    margin: 10rem 1.8rem 1rem 1.8rem;
+    padding: 1rem;
+    background-color: hsl(240, 4%, 19%, 0.3);
+    
+    border-radius: 30px;
+    color: #ffffff;
+
+}
+
+.workout h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.workout .sub-header{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 90;
+    padding: 1rem 8rem;
+}
+
+.work-feature{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.card{
+    margin-top: 2rem;
+    padding: 2rem 1rem 0.9rem 1rem;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.card1{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg-chest.jpeg);
+    background-size: 140%;
+    background-position-x: -55px;
+    background-position-y: -170px;
+}
+
+.card2{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg-back.jpeg);
+    background-size: 130%;
+
+}
+
+.card3{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(bg-legs.jpeg);
+    background-size: 110%;
+    background-position: center;
+}
+
+.card4{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg-arms.jpeg);
+    background-size: 150%;
+    background-position-x: 0px;
+    background-position-y: -180px;
+}
+
+.card:hover{
+    border-color: #ffffff;
+    background-size: 180%;
+}
+
+.card h3{
+    padding-top: 6rem;
+    padding-bottom: 1.6rem;
+}
+
+.card p{
+    margin-bottom: 1rem;
+}
+
+.card a{
+    background-color: #9b4e05;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    padding: 0.3rem;
+    transition: all 0.3s ease;
+}
+
+.card a:hover{
+    border-color: #fff;
+    background-color: transparent;
+}
+
+.container1{
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 2rem;
+}
+
+.header{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.sub-header{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 90;
+    padding: 1rem 8rem;
+    color: white;
+}
+
+.pricing{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .kartu{
+    padding: 3rem 2rem;
+    background-color: #27272a;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.member-copper{
+    position: absolute;
+    left: 138px;
+    top: -60px;
+    font-size: 5rem;
+    color: #93510f;
+}
+
+.member-diamon{
+    position: absolute;
+    left: 138px;
+    top: -60px;
+    font-size: 5rem;
+    color: #93510f; 
+}
+
+.member-crown{
+    position: absolute;
+    left: 138px;
+    top: -60px;
+    font-size: 5rem;
+    color: #93510f;  
+}
+.pricing .kartu:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.pricing .kartu .content2{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .kartu h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .kartu h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .kartu p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .kartu button{
+    color: #fff;    
+    background-color:  #9b4e05;
+    border-color: #9b4e05;
+    
+}
+
+.pricing .kartu button:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.button-sup{
+    padding: 5px;
+    margin-top: 60px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #93510f;
+}
+
+.tips{
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.logo2{
+    position: absolute;
+    max-width: 900px;
+    left: 90px;
+    opacity: 50%;
+    z-index: -100;
+
+}
+.logo3{
+    position: absolute;
+    max-width: 900px;
+    top: -50px;
+    left: 30px;
+    opacity: 30%;
+    z-index: -100;
+}
+
+.tips .column1{
+    /* background-color: #323232; */
+    border-radius: 20px;
+    position: relative;
+    margin: 2rem 2rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0rem;
+    align-items: center;
+}
+.tips-card {
+    background-color:rgb(0, 0, 0);
+    /* border: 1px solid #ffffff; */
+    width: auto;
+    height: auto;
+    margin: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .tips-card:hover{
+    border: 1px solid white;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+.image img{
+    width: 200px;
+}
+
+.tips .column1 p{
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 300px repeat(3, 1fr);
+    gap: 4rem;
+}
+
+footer .column .logo img{
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+
+footer .column p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: #fff;
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+footer .column h4{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a{
+    display: block;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover{
+    color: #1d4ed8;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 600px){
+    .nav-link{
+        display: none;
+    }
+    .nav-logo img{
+        width: 7rem;
+    }
+    .container{
+        margin: 2rem;
+    }
+    .workout .sub-header{
+        padding: 0.1rem;
+    }
+    .work-feature{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container1 .sub-header{
+        padding: 0.1rem;
+    }
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tips .column1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
